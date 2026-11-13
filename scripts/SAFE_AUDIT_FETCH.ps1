@@ -16,8 +16,13 @@ if (-not (Test-Path -LiteralPath (Join-Path $Project '.git'))) {
 }
 $origin = (& git remote get-url origin 2>$null | Out-String).Trim()
 if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($origin)) { throw 'No origin configured: inspect manually before proceeding' }
-$normalized = ($origin -replace '\\.git$','' -replace '^git@github.com:', 'https://github.com/' -replace '^ssh://git@github.com/', 'https://github.com/')
-if ($normalized -notmatch '^(https://github\.com/ipalalloi/budayago)$') {
+$allowedOrigins = @(
+  'https://github.com/ipalalloi/budayago.git',
+  'https://github.com/ipalalloi/budayago',
+  'git@github.com:ipalalloi/budayago.git',
+  'ssh://git@github.com/ipalalloi/budayago.git'
+)
+if ($origin -notin $allowedOrigins) {
   throw "Remote origin mismatch: $origin. No changes made."
 }
 Write-Host '=== Local status BEFORE remote read ==='
