@@ -1,0 +1,23 @@
+# BUDAYA GO! — provisional privacy boundary. Ignore rules do NOT secure already-tracked data.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.sql
+*.sqlite
+*.log
+/private/
+/evidence_private/
+/secure_evidence/
+/data/raw/
+/data/restricted/
+/consent_forms/
+/identities/
+/recordings_unapproved/
+/storage/
+/vendor/
+/node_modules/
+.DS_Store
+Thumbs.db

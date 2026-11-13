@@ -1,0 +1,8 @@
+evidence_id,claim,artifact_description,source_system,artifact_url_or_private_reference,original_event_timestamp_iso8601,original_timestamp_timezone,first_verified_release_date,product_identity_and_version,function_available_by_2026_03_31,independent_provenance,sha256,verification_method,verified_by,verification_timestamp,status,limitations,access_class,consent_reference
+E01,Product available on or before 2026-03-31,,,,,,,,,,,,,,NOT_RETRIEVED,,RESTRICTED,
+E02,Core functionality demonstrably existed by cutoff,,,,,,,,,,,,,,NOT_RETRIEVED,,RESTRICTED,
+E03,Current core function demonstrable,,,,,,,,,,,,,,NOT_TESTED,,RESTRICTED,
+E04,Historical product equals entered product,,,,,,,,,,,,,,NOT_VERIFIED,,RESTRICTED,
+E05,Cultural holder approval and usage scope,,,,,,,,,,,,,,NOT_RETRIEVED,,RESTRICTED,
+E06,Approved team eligibility documentation,,,,,,,,,,,,,,NOT_RETRIEVED,,CONFIDENTIAL,
+E07,Third-party code media license inventory,,,,,,,,,,,,,,NOT_RETRIEVED,,INTERNAL,
