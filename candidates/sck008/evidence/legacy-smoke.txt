@@ -1,0 +1,5 @@
+PASS homepage HTTP 200
+PASS login form exposes CSRF token
+PASS missing CSRF blocked with 403
+PASS login and admin user management HTTP 200
+PASS admin view is role separated

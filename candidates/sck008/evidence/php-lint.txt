@@ -1,0 +1,17 @@
+No syntax errors detected in app/CultureService.php
+No syntax errors detected in app/HeritageRights.php
+No syntax errors detected in app/HeritageStream.php
+No syntax errors detected in app/LoginThrottle.php
+No syntax errors detected in app/Policy.php
+No syntax errors detected in app/bootstrap.php
+No syntax errors detected in bin/install-admin.php
+No syntax errors detected in ops/db_inventory.php
+No syntax errors detected in public/heritage.php
+No syntax errors detected in public/index.php
+No syntax errors detected in tests/integration.php
+No syntax errors detected in tests/sck008_fixture.php
+No syntax errors detected in tests/sck_ci_guard.php
+No syntax errors detected in tests/test_sck006_private_ref.php
+No syntax errors detected in tests/test_sck007_login_throttle.php
+No syntax errors detected in tests/test_sck_ci_guard.php
+No syntax errors detected in tests/unit.php

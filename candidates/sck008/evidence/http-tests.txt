@@ -1,0 +1,9 @@
+PASS LH01 login, RBAC, create/retry idempotent, escaped title
+PASS LH02 PNG, MP3, identical retry, oversize and MIME rejection, draft and private stream restrictions
+PASS LH03 transaction rollback, assigned holder, per-asset grant, curator then admin
+PASS LH04 gallery search, permitted stream, unselected asset private, evidence hidden
+PASS LH05 contribution moderation, withdrawal of gallery/detail/stream, audit
+PASS UAT-26 active lesson HTML excludes answer key
+PASS UAT-25 wrong and correct responses persisted in order 0,1
+PASS UAT-28 authenticated valid-CSRF submission after withdrawal returns 403; attempts remain 2
+PASS LH06 logout removes administration access

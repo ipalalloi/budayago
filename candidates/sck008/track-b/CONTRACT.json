@@ -1,0 +1,76 @@
+{
+  "contract": "BUDAYAGO-TRACK-SYNC",
+  "version": "1.1",
+  "date": "2026-11-20",
+  "deadline_user_reported": "2026-11-20",
+  "deadline_official_verified": false,
+  "track_a": {
+    "authority": [
+      "implemented_features",
+      "test_results",
+      "release_sha",
+      "staging_readiness"
+    ],
+    "known_verified_baseline": {
+      "unit_regression_pass": 19,
+      "unit_regression_total": 19,
+      "privacy_tests_pass": 8,
+      "privacy_tests_total": 8,
+      "integration_pass": 18,
+      "integration_total": 18
+    },
+    "critical_open": [
+      "VPS_TLS_FPM_DB",
+      "real_device_UAT",
+      "independent_security",
+      "rights_verification",
+      "target_restore",
+      "release_approval"
+    ],
+    "uat_evidence_reference": "../evidence/UAT.csv",
+    "deployment_url": null,
+    "staging_verified": false,
+    "status": "STAGING_READY_LOCAL_TARGET_UNVERIFIED"
+  },
+  "track_b": {
+    "authority": [
+      "research_rationale",
+      "cultural_governance",
+      "proposal",
+      "budget",
+      "future_requirements"
+    ],
+    "proposal_status": "DRAFT_PENDING_VERIFICATION",
+    "budget_status": "PENDING_OFFICIAL_RULES_AND_QUOTES",
+    "proposal_id": null,
+    "innovation_statement_reviewed": false,
+    "source_registry_verified": false,
+    "implemented_claims_must_reference_track_a": true
+  },
+  "joint_gate": {
+    "owner_approval": null,
+    "claim_matrix_reviewed": false,
+    "demo_acceptance": false,
+    "submission_readiness": false,
+    "production_decision": "NO_GO"
+  },
+  "historical_baseline": {
+    "identifier": "SCK-006",
+    "candidate_path": "D:\\PROJEK\\BUDAYAGO\\incoming\\SCK006_UAT_CANDIDATE_20261114\\SCK_MVP_20261113",
+    "candidate_sha256": null,
+    "release_sha256": null,
+    "evidence_databases_preserve": [
+      "sck_ci",
+      "sck_uat"
+    ]
+  },
+  "baseline": {
+    "identifier": "SCK-008",
+    "upstream": "SCK-007 → Living Heritage Alpha",
+    "source_sha256_reference": "../SHA256SUMS.txt",
+    "evidence_databases_preserve": [
+      "sck_ci",
+      "sck_uat"
+    ]
+  }
+}

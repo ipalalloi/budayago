@@ -1,0 +1,76 @@
+Schema sck008_fixture | Engine 11.8.6-MariaDB-0+deb13u1 from Debian
+attempts	InnoDB	utf8mb4_unicode_ci
+audit_events	InnoDB	utf8mb4_unicode_ci
+heritage_assets	InnoDB	utf8mb4_unicode_ci
+heritage_asset_grants	InnoDB	utf8mb4_uca1400_ai_ci
+heritage_collections	InnoDB	utf8mb4_unicode_ci
+heritage_contributions	InnoDB	utf8mb4_unicode_ci
+heritage_draft_receipts	InnoDB	utf8mb4_uca1400_ai_ci
+heritage_rights	InnoDB	utf8mb4_uca1400_ai_ci
+heritage_upload_receipts	InnoDB	utf8mb4_uca1400_ai_ci
+knowledge	InnoDB	utf8mb4_unicode_ci
+lessons	InnoDB	utf8mb4_unicode_ci
+users	InnoDB	utf8mb4_unicode_ci
+attempts	learner_id	users	id
+attempts	lesson_id	lessons	id
+audit_events	actor_id	users	id
+heritage_assets	collection_id	heritage_collections	id
+heritage_asset_grants	asset_id	heritage_assets	id
+heritage_collections	author_id	users	id
+heritage_collections	holder_id	users	id
+heritage_contributions	author_id	users	id
+heritage_contributions	collection_id	heritage_collections	id
+heritage_draft_receipts	author_id	users	id
+heritage_draft_receipts	collection_id	heritage_collections	id
+heritage_rights	collection_id	heritage_collections	id
+heritage_rights	holder_id	users	id
+heritage_rights	reviewer_id	users	id
+heritage_upload_receipts	asset_id	heritage_assets	id
+heritage_upload_receipts	collection_id	heritage_collections	id
+knowledge	author_id	users	id
+knowledge	holder_id	users	id
+lessons	author_id	users	id
+lessons	knowledge_id	knowledge	id
+attempts	idx_attempts_user	learner_id	1
+attempts	idx_attempts_user	created_at	2
+attempts	lesson_id	lesson_id	1
+attempts	PRIMARY	id	1
+audit_events	actor_id	actor_id	1
+audit_events	idx_audit_created	created_at	1
+audit_events	PRIMARY	id	1
+heritage_assets	idx_heritage_asset	collection_id	1
+heritage_assets	idx_heritage_asset	visibility	2
+heritage_assets	PRIMARY	id	1
+heritage_assets	storage_key	storage_key	1
+heritage_asset_grants	PRIMARY	asset_id	1
+heritage_collections	holder_id	holder_id	1
+heritage_collections	idx_heritage_author	author_id	1
+heritage_collections	idx_heritage_public	status	1
+heritage_collections	idx_heritage_public	category	2
+heritage_collections	PRIMARY	id	1
+heritage_contributions	author_id	author_id	1
+heritage_contributions	idx_heritage_contribution	collection_id	1
+heritage_contributions	idx_heritage_contribution	status	2
+heritage_contributions	PRIMARY	id	1
+heritage_draft_receipts	collection_id	collection_id	1
+heritage_draft_receipts	PRIMARY	author_id	1
+heritage_draft_receipts	PRIMARY	request_key	2
+heritage_rights	holder_id	holder_id	1
+heritage_rights	PRIMARY	collection_id	1
+heritage_rights	reviewer_id	reviewer_id	1
+heritage_upload_receipts	asset_id	asset_id	1
+heritage_upload_receipts	PRIMARY	collection_id	1
+heritage_upload_receipts	PRIMARY	content_sha256	2
+knowledge	author_id	author_id	1
+knowledge	idx_knowledge_holder	holder_id	1
+knowledge	idx_knowledge_holder	status	2
+knowledge	idx_knowledge_visibility	status	1
+knowledge	idx_knowledge_visibility	scope	2
+knowledge	PRIMARY	id	1
+lessons	author_id	author_id	1
+lessons	idx_lessons_status	status	1
+lessons	idx_lessons_status	knowledge_id	2
+lessons	knowledge_id	knowledge_id	1
+lessons	PRIMARY	id	1
+users	email	email	1
+users	PRIMARY	id	1

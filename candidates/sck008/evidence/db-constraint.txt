@@ -1,0 +1,1 @@
+PASS nonexistent asset rejected by InnoDB foreign key.

@@ -1,0 +1,2 @@
+PASS PWA01 Chromium 150.0.7871.181 390px, public landing, service worker active
+PASS PWA02 offline save in open form, reload restoration, server acknowledgement, static-only cache, cold offline fallback
