@@ -1,0 +1,24 @@
+{
+  "project": "BUDAYAGO — Living Heritage Library",
+  "checkpoint": "SCK-008",
+  "version": "0.2 staging candidate",
+  "date_wita": "2026-11-20",
+  "state": "STAGING_READY",
+  "scope": "synthetic isolated staging",
+  "production_approved": false,
+  "live_verified": false,
+  "canonical_remote": "https://github.com/ipalalloi/budayago",
+  "development_base": "f1fbb793a06cafbe58036f7541b08bed049f3fe1",
+  "inputs": "01_BASELINE_REGISTRY.md",
+  "hash_algorithm": "SHA-256",
+  "file_digests": "SHA256SUMS.txt",
+  "test_evidence": "evidence/",
+  "docroot": "public",
+  "schema_order_fresh": [
+    "database/mysql.sql",
+    "database/20261119_heritage_additive.sql",
+    "database/20261120_heritage_rights.sql"
+  ],
+  "next_gate": "CloudPanel discovery + staging UAT",
+  "real_content_authorized": false
+}

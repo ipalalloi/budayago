@@ -1,0 +1,11 @@
+claim_id,proposal_claim,classification,track_a_evidence_required,current_evidence,status,action,sck008_status,sck008_delta
+CLM-001,PHP-MySQL integration established,VERIFIED_BASELINE,18/18 integration report,User-reported SCK-005 18/18 PASS,REPORTED_VERIFIED_BASELINE,Attach timestamped report and code SHA,TESTED,"MariaDB 11.8.6 + PHP 8.4.24, schema.txt; MySQL VPS belum diuji."
+CLM-002,Five role types supported,IMPLEMENTED_REQUIRES_RUNTIME,Role setup and five login session checks,Five role types reported existing,PARTIAL,Test real login for all five roles,TESTED,"Five synthetic roles logged in, http-tests.txt."
+CLM-003,Knowledge can be published publicly,IMPLEMENTED_REQUIRES_RUNTIME,DB and guest HTTP smoke,PUBLIC/PUBLISHED shown,POSITIVE_FLOW_EVIDENCED,Keep linked evidence,TESTED,"Selected heritage records and assets, LH03–04; legacy publication unchanged."
+CLM-004,Holder rejection workflow exists,IMPLEMENTED_REQUIRES_RUNTIME,REJECTED row and audit event,Rejection reached REJECTED,POSITIVE_FLOW_EVIDENCED,Confirm reason and audit,IMPLEMENTED,Historical rejection retained; human cultural verification outstanding.
+CLM-005,Lessons with persisted attempts work,IMPLEMENTED_REQUIRES_RUNTIME,UAT-22 through UAT-26,Not closed,OPEN,Complete targeted UAT,TESTED,"UAT-25, UAT-26, generated active lesson fixture."
+CLM-006,Withdrawal immediately blocks linked lesson,IMPLEMENTED_REQUIRES_RUNTIME,UAT-27 and UAT-28,Not closed,OPEN,Prove denial and no new attempt,TESTED,"UAT-28, 403 and unchanged attempts."
+CLM-007,Multimedia interview upload available,PROPOSED_V0_2,N/A,Not implemented,PROPOSED_ONLY,Do not claim implemented,TESTED,"Local PNG and synthetic MP3 multipart plus retry, LH02; actual phone TBD."
+CLM-008,AI transcription OCR and heritage graph available,PROPOSED_V0_2,N/A,Not implemented,PROPOSED_ONLY,Do not claim implemented,PLANNED,"No transcription, OCR or graph delivered."
+CLM-009,Independent customary authority validated,EXTERNAL_VALIDATION,Private consent verification,Not provided,PENDING_EXTERNAL_VALIDATION,Avoid claiming verified cultural authenticity,BLOCKED,No signed real rights evidence provided.
+CLM-010,Stable HTTPS demo URL available,STAGING_GATE,HTTPS and URL readiness log,Not provided,OPEN,Verify after deploy,BLOCKED,No verified external URL for this release.

@@ -1,0 +1,41 @@
+PASS: author can edit draft
+PASS: other curator cannot edit
+PASS: draft not visible to student
+PASS: assigned holder can review
+PASS: admin cannot impersonate holder
+PASS: cannot publish public content without online consent
+PASS: approved rights allow admin publication
+PASS: public published content accessible anonymously
+PASS: members-only not anonymously accessible
+PASS: members-only accessible to authenticated student
+PASS: restricted content not accessible to student
+PASS: withdrawn content inaccessible
+PASS: withdrawn source cannot be republished through editing
+PASS: student can read published lesson
+PASS: revocation hides published lesson
+PASS: answer whitespace/case normalization
+PASS: email validation
+PASS: invalid knowledge rejected
+PASS: html escaping
+UNIT TESTS: 19 passed
+PASS: admin can inspect
+PASS: author curator can inspect
+PASS: other curator denied
+PASS: assigned holder can inspect
+PASS: other holder denied
+PASS: teacher denied
+PASS: student denied
+PASS: guest denied
+SCK006_PRIVATE_REF_TESTS=8/8 PASS
+PASS: failed login 1
+PASS: failed login 2
+PASS: failed login 3
+PASS: failed login 4
+PASS: failed login 5
+PASS: shared IP limit across email/session
+PASS: shared email limit across IP/session
+PASS: unrelated successful login
+PASS: public storage rejected
+PASS: missing directory fails closed
+SCK007_LOGIN_THROTTLE_TESTS=10 PASS
+PASS: 11 DSN cases; 7 version cases (no database connection)

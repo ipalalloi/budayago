@@ -1,0 +1,14 @@
+sck008_fixture	11.8.6-MariaDB-0+deb13u1 from Debian
+attempts
+audit_events
+heritage_asset_grants
+heritage_assets
+heritage_collections
+heritage_contributions
+heritage_draft_receipts
+heritage_rights
+heritage_upload_receipts
+knowledge
+lessons
+users
+20

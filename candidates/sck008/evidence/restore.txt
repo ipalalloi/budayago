@@ -1,0 +1,1 @@
+PASS dump/restoration on distinct disposable schema: ordered SQL row data identical; private fixture media copies identical.
